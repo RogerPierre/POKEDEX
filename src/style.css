@@ -1,0 +1,20 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+#logo-side{
+    max-width: 150px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+#logo-main{
+    max-width: 400px;
+    justify-self: flex-start;
+}
