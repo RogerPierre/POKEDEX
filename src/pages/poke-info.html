@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info-pokemon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@300&display=swap');
+
+        body{
+            color: white;
+            font-family:"Kumbh Sans", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+        }
+        #background-img{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        #pokemon-content{
+            background-color: #77B35B;
+            width: 750px;
+            height: 500px;
+            padding: 3cqh;
+            display: flex;
+            align-items: center;
+            border-radius: 24px;
+        }
+        .content{
+            align-self: flex-start;
+        }
+        .content h1{
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .description{
+            font-size: x-small;
+        }
+        #pokemon-content img{
+            width: 290px;
+            height: 290px;
+        }
+        .elements{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .element-type{
+            padding: 8px;
+            background-color: #BFC66B;
+            font-size: x-small;
+            border-radius: 20px;
+        }
+        .metric{
+            padding: 9px;
+            background-color: #BFC66B;
+            font-size: x-small;
+            border-radius: 2px;
+        }
+        .abilities{
+            margin-top: -10px;
+        }
+        .abilitie{
+            padding: 8px;
+            background-color: #BFC66B;
+            font-size: x-small;
+            border-radius: 2px;
+        }
+        .stats{
+            display: grid;
+            grid-template-columns: 120px 120px ;
+            border-radius: 2px;
+            column-gap: 20px;
+            margin-top: 20px;
+            row-gap: 10px;
+        }
+        .stat{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100px;
+            padding: 10px;
+            
+        }
+        .stat .value{
+            align-self: flex-end;
+            padding-left: 60%;
+        }
+        #hp{
+            background-color: #DF2140;
+        }
+        #atk{
+            background-color: #FF994D;
+        }
+        #def{
+            background-color: #EECD3D;
+        }
+        #spa{
+            background-color: #85DDFF;
+        }
+        #spd{
+            background-color: #96DA83;
+        }
+        #sPd{
+            background-color: #FB94A8;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="../assets/background.png" alt="background" id="background-img">
+    <main id="pokemon-content">
+        <img src="../assets/POKEMON-TEST.png" alt="">
+        <div class="content">
+            <footer>#001</footer>
+            <h1>bubosuro <img src="..//assets/image.png" alt="fone" style="height: 24px; width: 24px; padding-left: 24px;"></h1>
+            <div class="elements">
+                <span class="element-type">poison</span>
+                <span class="element-type">poison</span>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisiccati, maxime nobis deleLorem ipsum dolor sit amet consectetur adipisi</p>
+            <div class="metrics">
+                <span class="metric">height:90</span>
+                <span class="metric">height:90</span>
+            </div>
+                <h4>stats</h4>
+            <div class="stats">
+                <div class="stat" id="hp"> hp<span class="value">90</span> </div>
+                <div class="stat" id="atk">atk<span class="value">90</span> </div>
+                <div class="stat" id="def">def<span class="value">90</span> 0</div>
+                <div class="stat" id="spa">spf<span class="value">90</span> </div>
+                <div class="stat" id="spd">spd<span class="value">90</span> </div>
+                <div class="stat" id="sPd">spd<span class="value">90</span> </div>
+            </div>
+            <div class="abilities">
+                <h4>abiltes</h4>
+                <span class="abilitie">overgrow</span>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../dist/info.js"></script>
+</body>
+</html>
